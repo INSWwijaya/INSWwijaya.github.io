@@ -1,0 +1,74 @@
+/* Untuk Tablet */
+
+@media all and (max-width: 1000px) {
+    * {
+        width: auto;
+        margin-bottom: 50px;
+    }
+    header h1 {
+        font-size: 32px;
+    }
+    header h2 {
+        font-size: 20px;
+    }
+}
+
+
+/* Untuk Smartphone */
+
+@media all and (max-width: 670px) {
+    footer {
+        text-align: center;
+    }
+    .nav-right {
+        display: none;
+    }
+    header h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    header h2 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    header .produk-popular img {
+        width: 200px;
+        height: 130px;
+    }
+    .produk-terbaru h1 {
+        font-size: 24px;
+    }
+    .produk-terbaru img {
+        width: 200px;
+        height: 130px;
+    }
+    .produk-terlaris h1 {
+        font-size: 24px;
+    }
+    .produk-terlaris img {
+        width: 200px;
+        height: 130px;
+    }
+    .about-shop h1 {
+        font-size: 20px;
+    }
+    .about-shop p {
+        font-size: 12px;
+    }
+    footer {
+        height: 150px;
+    }
+    footer img {
+        width: 200px;
+        float: none;
+        margin: 0px;
+        padding-bottom: 0px;
+    }
+    footer p {
+        font-family: "Montserrat";
+        padding: top 0;
+        float: none;
+        margin: 0px;
+        line-height: 30px;
+    }
+}
