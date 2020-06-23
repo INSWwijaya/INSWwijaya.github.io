@@ -1,0 +1,403 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Own CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* navigation css */
+
+nav {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(242, 155, 97);
+}
+
+nav .nav-left {
+    float: left;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+nav .nav-left img {
+    width: 150px;
+}
+
+nav .nav-right {
+    font-family: "Montserrat";
+    float: right;
+}
+
+nav .nav-right li {
+    float: left;
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+nav .nav-right a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 22px 20px;
+}
+
+nav .nav-right a:hover {
+    background-color: #e65100;
+}
+
+.menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 10px;
+    display: none;
+}
+
+
+/* header css */
+
+header {
+    background-image: url("assets/img/banner.jpg");
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+    font-family: "Montserrat";
+}
+
+header h1 {
+    font-size: 48px;
+    color: #fff;
+}
+
+header h2 {
+    font-size: 36px;
+    color: #fff;
+}
+
+header hr {
+    width: 40%;
+    margin-top: 10px;
+}
+
+header .img-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+header .product-popular img {
+    width: 250px;
+    height: 180px;
+}
+
+header .img-container .product-popular {
+    box-shadow: 0 0 10px #000;
+    margin: 0 20px 30px 20px;
+    padding: 15px;
+    background-color: #fff;
+}
+
+header .product-popular p {
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* produk-terbaru css */
+
+.produk-terbaru {
+    font-family: "Montserrat";
+    background-color: #f5f5f5;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.produk-terbaru h1 {
+    font-size: 48px;
+    color: #000;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+    border-width: medium;
+}
+
+.produk-terbaru .img-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.produk-terbaru .img-produk img {
+    width: 200px;
+    height: 130px;
+}
+
+.produk-terbaru .img-produk {
+    box-shadow: 0 0 10px #000;
+    margin: 0 20px 30px 20px;
+    padding: 15px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.produk-terbaru .img-produk:hover {
+    padding: 5px;
+    box-shadow: 0 0 15px #e65100;
+}
+
+.produk-terbaru .img-produk p {
+    line-height: 20px;
+}
+
+
+/* produl terlaris css */
+
+.produk-terlaris {
+    font-family: "Montserrat";
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.produk-terlaris h1 {
+    font-size: 48px;
+    color: #000;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+    border-width: medium;
+}
+
+.produk-terlaris img {
+    width: 250px;
+    height: 180px;
+}
+
+.produk-terlaris .img-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.produk-terlaris .img-container .img-produk {
+    box-shadow: 0 0 10px #000;
+    margin: 0 50px 30px 50px;
+    padding: 15px;
+    background-color: #fff;
+    transition: 0.4s;
+}
+
+.produk-terlaris .img-container .img-produk:hover {
+    padding: 5px;
+    position: relative;
+    box-shadow: 0 0 15px #AF4337;
+}
+
+.produk-terlaris .img-produk p {
+    line-height: 20px;
+}
+
+
+/* about shop */
+
+.about-shop {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about-shop h1 {
+    font-size: 36px;
+    color: #000;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+    border-width: medium;
+    margin-bottom: 15px;
+}
+
+.about-shop p {
+    margin: 0 auto;
+    width: 60%;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+}
+
+
+/* footer */
+
+footer {
+    font-family: "Montserrat";
+    background-color: rgb(248, 183, 140);
+    width: 100%;
+    height: 60px;
+}
+
+footer img {
+    padding-top: 10px;
+    width: 100px;
+    margin: 5px 0 5px 30px;
+    float: left;
+}
+
+footer h5 {
+    float: left;
+    line-height: 60px;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 22px;
+}
+
+footer p {
+    float: right;
+    line-height: 60px;
+    margin-right: 30px;
+    color: #fff;
+}
